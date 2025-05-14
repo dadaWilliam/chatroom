@@ -1,4 +1,5 @@
 import { ChatRoom } from "@/components/ChatRoom";
+import SignIn from "@/components/sign-in";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
           <h1 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600 mb-2">Welcome to Chat Room</h1>
           <p className="text-muted-foreground text-sm">A real-time chat application built with Next.js, Shadcn UI, and Convex</p>
         </div>
+        <SignIn />
         <ChatRoom />
       </div>
     </main>

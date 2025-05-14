@@ -8,7 +8,7 @@ interface ChatMessageProps {
 }
 
 export function ChatMessage({ content, author, isCurrentUser = false }: ChatMessageProps) {
-    console.log('isCurrentUser:', isCurrentUser);
+    // console.log('isCurrentUser:', isCurrentUser);
   return (
     <div className={`flex ${isCurrentUser ? 'justify-end' : 'justify-start'} mb-4`}>
       <div className={`flex ${isCurrentUser ? 'flex-row' : 'flex-row'} items-end gap-2 max-w-[80%]`}>
